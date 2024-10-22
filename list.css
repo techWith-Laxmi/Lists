@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#063970;
+}
+.header {
+    /* background-color: #5C6BC0; Cool blue color */
+    color: #ffffff; /* White text for contrast */
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    /* font-size: 50px; */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 60x;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 30px;
+    color: #FFEB3B; /* Bright yellow for the subheading */
+}
+
+.header i {
+    margin-right: 10px;
+    color: #FFEB3B; /* Yellow icon color */
+}
+
+.container
+{
+    margin: 20px;
+    text-align: center;
+    height: 500px;
+    width: 450px;
+    /* border: 1px solid black; */
+    background-color: rgb(133, 167, 202);
+    box-sizing: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    padding-right: 15px;
+}
+.container .text{
+    margin: 10px;
+    font-size: 40px;
+}
+.container .addlist{
+    height:50px ;
+    width: 90%; 
+    margin: 18px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .addlist input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-radius:50px ;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.container .addlist .addbtn{
+    height: 100%;
+    width: 30%;
+    background-color:#067022;
+    border-radius: 50px;
+    /* margin-top: -20px; */
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: aliceblue;
+}
+.container .addlist .addbtn:hover{
+    cursor:pointer;
+}
+.container .addlist .addbtn:active{
+    font-size: 15px;
+   box-shadow:  10px 10px 20px rgba(16, 25, 148, 0.5),  /* First shadow */
+    -10px -10px 30px rgba(16, 25, 148, 0.5); /* Second shadow, different direction */
+}
+.box{
+    position: relative;
+    overflow-y: auto;
+    margin-top: 10px;
+    height: 350px;
+    padding-right:5px;
+}
+ .box li{
+    font-size: larger;
+    position: relative;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 15px;
+    padding:35px;
+    border-radius: 40px;
+    min-height: 30px;
+    cursor: pointer;
+    box-shadow:  10px 10px 20px rgba(17, 17, 17, 0.5),  /* First shadow */
+    -10px -10px 30px rgba(18, 17, 17, 0.5);
+    
+}
+.box li::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color:#2f363e;
+  border-radius: 50%;
+  left: 3px;
+}
+.box .done{
+    background-color: rgb(237, 130, 159);
+}
+
+.box .done::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    height: 6px;
+    width: 12px;
+    transform: rotate(315deg);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+.box .delete-icon{
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+}
+
+.box .checkbtn{
+    /* opacity: 0; */
+    position: absolute;
+    left: 3px;
+}
